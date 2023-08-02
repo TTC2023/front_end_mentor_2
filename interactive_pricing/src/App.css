@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.blue {
+  background-color: #f1f5fe;
+  height: 50vh;
+  width: 100%;
+  border-bottom-left-radius: 25%;
+}
