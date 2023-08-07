@@ -6,6 +6,7 @@ const PricingInfo = () => {
   const [sliderPosition, setSliderPosition] = useState(50); // Starts at 50% (middle)
   const [price, setPrice] = useState(16); // Starts at $16
 
+
   const handleSliderClick = (event) => {
     const rect = event.target.getBoundingClientRect();
     const x = event.clientX - rect.left; // x position within the element
@@ -35,6 +36,9 @@ const PricingInfo = () => {
         <hr className={styles.leftLine} style={{width: `${sliderPosition}%`}}/>
         <hr className={styles.rightLine} style={{width: `${100-sliderPosition}%`}}/>
         <img className={styles.slider} src={slider} alt="slider" style={{left: `${sliderPosition}%`}} />
+      </div>
+      <div>
+
       </div>
     </div>
   )
